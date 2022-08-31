@@ -5,11 +5,13 @@ import ChessBoard from "./components/ChessBoard";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="*" element={<ChessBoard />} />
-      </Routes>
-    </Router>
+    <div className="w-screen h-screen bg-[#e8e5e2] flex justify-center items-center">
+      <Router>
+        <Routes>
+          <Route path="*" element={<ChessBoard />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
